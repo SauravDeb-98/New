@@ -1,0 +1,40 @@
+pragma solidity ^0.5.9; 
+contract Quill{
+    uint Total=50000000000 ;
+    uint Private_sale_duration =15;
+    uint Pre_sale_duration =15;
+
+    
+    function set(uint x)public{
+        Total=x;
+    }
+    function get() view public returns(uint)
+    {
+        return Total;
+    }
+ 
+    
+    function reserve(uint y)public{
+        Total=y*30/100;
+        return;
+        
+    }
+    
+       function interest(uint z) public{
+        Total=z*20/100;
+        return;
+    }
+    function hr(uint j) public{
+        Total=j*10/100;
+        return;
+    }
+    
+       function general_fund(uint k) public{
+        Total=k*13/100;
+        return;
+    }
+    function token_sale_wallet(uint p) public{
+        Total=p*25/100;
+        return;
+    }
+}
